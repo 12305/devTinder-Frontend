@@ -19,7 +19,7 @@ export function SocketProvider({ children }: { children: React.ReactNode }) {
     if (user) {
       const token = localStorage.getItem('token');
       
-      const newSocket = io('http://localhost:5000', {
+      const newSocket = io('https://devtinder-backend-ks6m.onrender.com', {
         auth: {
           token: token
         }

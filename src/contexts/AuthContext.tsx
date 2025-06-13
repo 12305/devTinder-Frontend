@@ -36,7 +36,7 @@ interface RegisterData {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // Configure axios defaults
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://devtinder-backend-ks6m.onrender.com/api';
 
 // Add token to requests
 axios.interceptors.request.use((config) => {
